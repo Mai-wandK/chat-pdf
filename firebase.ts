@@ -4,12 +4,12 @@ import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: "apiKey",
-  authDomain: "chat-pdf-e787a.firebaseapp.com",
-  projectId: "chat-pdf-e787a",
+  authDomain: "chat-pdf.firebaseapp.com",
+  projectId: "chat-pdf-",
   storageBucket: "chat-pdf-e787a.appspot.com",
-  messagingSenderId: "815777860548",
-  appId: "1:815777860548:web:07e6cfe7209255fc8a3291",
-  measurementId: "G-T942HJDC56"
+  messagingSenderId: "870548",
+  appId: "1:860548:web:07e6cfejkl255fc8a3291",
+  measurementId: "G-jhklC56"
 };
 
 // Initialize the Firebase app if it hasn't been initialized yet
