@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chat with Your PDF
+
+This application allows users to upload their PDF files and engage in natural language conversations with them. Using advanced AI models, users can query and interact with the content of their PDFs in a meaningful way.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Environment Variables](#environment-variables)
+  - [Firebase Setup](#firebase-setup)
+  - [Pinecone Setup](#pinecone-setup)
+  - [Clerk Setup](#clerk-setup)
+- [Usage](#usage)
+
+## Features
+
+- **Upload PDFs**: Easily upload PDF files for processing.
+- **AI-Powered Conversations**: Chat with your PDFs using OpenAI’s GPT-4.
+- **Document Splitting**: PDF content is split into manageable chunks for efficient querying.
+- **Embeddings and Search**: Pinecone is used to create vector embeddings for efficient querying of document content.
+- **Authentication**: Secure user authentication with Clerk.
+- **Cloud Storage**: Firebase is used for storing user files and file metadata.
+
+## Technologies Used
+
+- **[OpenAI GPT-4](https://openai.com)**: For generating natural language responses based on PDF content.
+- **[Langchain](https://langchain.com)**: To manage document loaders, embedding generation, and AI-driven conversation flows.
+- **[Firebase](https://firebase.google.com)**: For real-time database and cloud storage functionality.
+- **[Clerk](https://clerk.dev)**: For authentication and user management.
+- **[Next.js](https://nextjs.org)**: React framework for server-side rendering and API routes.
+- **[Tailwind CSS](https://tailwindcss.com)**: For responsive and utility-first styling.
+- **[React](https://reactjs.org)**: For building the user interface.
+- **[Typescript](https://www.typescriptlang.org)**: For type-safe code development.
+- **[Pinecone](https://www.pinecone.io)**: For storing and querying vector embeddings of the document content.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Before setting up the project, ensure you have the following tools installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Node.js**: [Download here](https://nodejs.org)
+- **npm** or **yarn**: A package manager for handling dependencies
+- An **OpenAI API key** for using GPT models
+- A **Firebase** project set up
+- A **Clerk** API key for authentication
+- A **Pinecone** API key for managing vector embeddings
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
